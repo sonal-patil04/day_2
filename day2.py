@@ -196,3 +196,56 @@
 
 # --------------------------------------------------------------------------------------
 
+
+# year=2000
+# days=year*365
+# days=year%5
+# if days==366:
+#     print("The given year is leap year")
+# else:
+#     print("the given year is not leap year")
+
+# ---->This problem is not done yet
+
+# ----------------------------------------------------------------------------
+
+
+
+# a=eval(input("Enter a number: "))
+# b=eval(input("Enter a number: "))
+# operand=input("enter an operand: ")
+
+# operand=="+","-","*","/"
+# if operand=="+":
+#     print(f"{a+b}")
+# elif operand=="-":
+#     print(f"{a-b}")
+# elif operand=="*":
+#     print(a*b)
+# elif operand=="/" and b==0:
+#     print("Cannot be divided by zero")
+# elif operand=="/":
+#     print(f"{a/b}")
+# else:
+#     print("invalid operand")
+
+
+# ------------------------------------------------
+
+a=eval(input("Enter a number: "))
+b=eval(input("Enter a number: "))
+operand=input("Enter operand: ")
+match "+","-","/","*":
+    case "+":
+        print(f"{a+b}")
+    case "-":
+        print(f"{a-b}")
+    case "*":
+        print(f"{a*b}")
+    # case "/" and b==0:
+    #     print(f"cannot be divided by zero")
+    case "/":
+        print(f"{a/b}")
+    # case _:
+    #     print("Invalid operand")
+    
