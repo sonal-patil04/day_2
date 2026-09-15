@@ -234,18 +234,22 @@
 
 a=eval(input("Enter a number: "))
 b=eval(input("Enter a number: "))
-operand=input("Enter operand: ")
-match "+","-","/","*":
+operator=input("Enter operator: ")
+match operator:
     case "+":
-        print(f"{a+b}")
+        print(a+b)
     case "-":
         print(f"{a-b}")
     case "*":
         print(f"{a*b}")
-    # case "/" and b==0:
-    #     print(f"cannot be divided by zero")
     case "/":
-        print(f"{a/b}")
-    # case _:
-    #     print("Invalid operand")
+        if b==0:
+            print(f"cannot be divided by zero")
+        else:
+            print(a/b)
+    case _:
+        print("Invalid operand")
     
+
+# --------------------------------------------------------------------------------------------
+
